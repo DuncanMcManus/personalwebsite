@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="icon.jpg">
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 30pt;
+      }
+      body {
+        background-color:azure;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      }
+      .column {
+        padding: 2%;
+        float: left;
+        width: 46%;
+      }
+      #headshot {
+        width: 35%;
+      }
+      #bio {
+        text-indent: 50px;
+      }
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+      .content {
+        margin: auto;
+        width: 60%;
+      }
+      .content:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <title>Duncan McManus</title>
+  </head>
+  <body>
+    <h1>me</h1>
+    <div class="content">
+      <div id="headshot" class="column">
+          <img src="headshot.JPG" alt="nice picture of a young professional">
+        </div>
+      <div id="bio" class="column">
+        <p>
+          I'm Duncan McManus, a junior studying Computer Science at Brown University.  I'm interested in software development across the stack and am particularly
+          passionate about projects involving Virtual Reality or Robotics.  Outside of CS, I've enjoyed taking classes in Environmental Science and Comparative Literature.
+        </p>
+        <p>
+          I love creating apps from scratch with friends so I've attended three hackathons.  These projects, as well as some from class, are detailed
+          below.
+        </p>
+        <p>
+          I also have experience working with large existing code bases.  I spent this past summer interning at GE Digital, developing software as part of an AGILE team.
+        </p>
+        <p>
+          When I return to Brown in the fall, I will continue to do research work as part of the Humans to Robots Laboratory.  My most recent work there was to 
+          create a Virtual Reality display of a robot's current position and orientation that updates live as the robot moves.  This was done using JavaScript, 
+          A-Frame, and data from a ROS Topic subscription.
+        </p>
+        <p>
+          Outside of school, I've done improv comedy for many years.  I enjoy hikes, travel, and playing video games with friends.  I'm a big fan of a lot of music and even 
+          <a href="https://www.facebook.com/DuncanAndTheSevenBraids/">have a band named after me</a> (that I'm not in).
+        </p>
+      </div>
+    </div>
+    <h1>projects</h1>
+    <div class="content">
+      <div class="column">
+        <h2>Rhode to Vote</h2>
+        <p>
+            Rhode to Vote is a ride-sharing platform for voting access. People who can't get to the polls are able to sign up and request a ride. Volunteers sign up and are given a route to pick up voters based on available time, distance, and preferences. On this 4 person multi-month project, I worked on the Java backend. I wrote three different modified Dijkstra and Breadth First Search graph traversal algorithms to find optimal routes.
+        </p>
+      </div>
+      <div class="column">
+          <h2>AnyWays</h2>
+          <p>
+              Google Maps clone made from scratch. Web app displays a street map that can be panned, zoomed, and clicked for point-route selection. I wrote the Java backend which implements a KD-Tree to store location data, A* for finding shortest paths, Proxy Pattern for caching on database requests, and a Trie for autocorrecting street names. I also wrote a JavaScript front-end which uses tile caching for displaying map sections.
+          </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="column">
+          <h2>Attic</h2>
+          <p>
+              Attic gives users ownership of a Virtual Reality space which they can create, design, and share with others. For Hack@Brown 2018 I led my team in creating a mobile AR web app that lets the user select a 3D model from a menu and place it in their surrounding space.  This is an ongoing project with a POC written in JavaScript using Google's three.ar.js, it is being transitioned to Unity.
+          </p>
+        </div>
+        <div class="column">
+            <h2>Soundstage</h2>
+            <p>
+                Created for Hack@Brown 2017. Soundstage is for music fans that have trouble keeping up with all their favorite artists. After an artist name is entered, it presents a chronological feed of releases. I was the team leader and wrote JavaScript to get user input, make a request to the Spotify API, and parse results.
+            </p>
+          </div>
+      </div>
+  </body>
+</html>
